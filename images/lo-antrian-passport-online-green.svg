@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="110" viewBox="0 0 186 110">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="184" height="108" x="1" y="1" fill="#438086" stroke="#438086" stroke-width="2" rx="8"/>
+        <text fill="#FFF" font-family="Arial-BoldMT, Arial" font-size="16" font-weight="bold">
+            <tspan x="95" y="34">Antrian</tspan> <tspan x="95" y="59">Passport</tspan> <tspan x="95" y="84">Online</tspan>
+        </text>
+        <g stroke="#FFF" stroke-width="4" transform="translate(21 33)">
+            <circle cx="19" cy="11.495" r="10"/>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M57.16 33.576c-1.362-8.915-5.072-14.201-11.128-15.857 3.855-2.128 5.016-5.531 5.016-8.714 0-3.13-1.561-5.916-3.896-7.646M47.258 38.554c0-10.078-4.407-16.587-13.22-19.529C38.075 17.74 41 13.96 41 9.495 41 5.07 38.128 1.319 34.147 0"/>
+            <path d="M38 42.995c0-11.874-8.507-21.5-19-21.5S0 31.12 0 42.995c13.143.088 25.228.12 38 0z"/>
+        </g>
+    </g>
+</svg>

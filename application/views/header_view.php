@@ -6,6 +6,7 @@
         .spinner{margin:0;width:70px;height:18px;margin:-35px 0 0 -9px;position:absolute;top:50%;left:50%;text-align:center}.spinner > div{width:18px;height:18px;background-color:#333;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.spinner .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.spinner .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,100%{-webkit-transform:scale(0.0)}40%{-webkit-transform:scale(1.0)}}@keyframes bouncedelay{0%,80%,100%{transform:scale(0.0);-webkit-transform:scale(0.0)}40%{transform:scale(1.0);-webkit-transform:scale(1.0)}}
     </style>
     <style>
+        
         div.isi-tengah{
             margin: auto auto; width: 130px;
         }
@@ -14,6 +15,18 @@
             margin: auto auto; width: 260px;
             }
         }
+        div.isi-tengah2:hover{
+            -webkit-animation: rotation 1s linear;
+            
+        }
+        @-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
         div.lo4{
             margin: auto auto; padding: 10px 10px 0px 10px;
         }
@@ -22,11 +35,102 @@
             margin: auto auto; padding: 25px 10px 25px 10px;
             }
         }
+       .image-hover{
+            background-image: url('<?php echo base_url();?>images/lo-antrian-passport-online@3x.png');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-origin: content-box;
+             transition: all 1s ease-in-out;
+          
+            margin: 5px;
+       }
+       .image-hover:hover{
+            overflow:hidden;
+            -webkit-animation: switch 6s infinite; /* Chrome, Safari, Opera */ 
+            animation: switch 6s infinite;
+           
+            }
+
+            @-webkit-keyframes switch {
+                10% {background-image: url('<?php echo base_url();?>images/lo-antrian-passport-online-green3x.png');}
+                50% {background-image: url('<?php echo base_url();?>images/lo-antrian-passport-online-red3x.png');}
+                90% {background-image: url('<?php echo base_url();?>images/lo-antrian-passport-online-blue3x.png');}
+                
+            }
+
+            .image2-hover{
+            background-image: url('<?php echo base_url();?>images/lo-visa-online@3x.png');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-origin: content-box;
+             transition: all 1s ease-in-out;
+          
+            margin: 5px;
+       }
+       .image2-hover:hover{
+            overflow:hidden;
+            -webkit-animation: switch2 6s infinite; /* Chrome, Safari, Opera */ 
+                animation: switch2 6s infinite;
+           
+            }
+
+            @-webkit-keyframes switch2 {
+                10% {background-image: url('<?php echo base_url();?>images/lo-visa-online-green@3x.png');}
+                50% {background-image: url('<?php echo base_url();?>images/lo-visa-online-red@3x.png');}
+                90% {background-image: url('<?php echo base_url();?>images/lo-visa-online-blue@3x.png');}
+                
+            }
+
+            .image3-hover{
+            background-image: url('<?php echo base_url();?>images/lo-itas-online@3x.png');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-origin: content-box;
+             transition: all 1s ease-in-out;
+          
+            margin: 5px;
+       }
+       .image3-hover:hover{
+            overflow:hidden;
+            -webkit-animation: switch3 5s infinite; /* Chrome, Safari, Opera */ 
+                animation: switch3 5s infinite;
+           
+            }
+
+            @-webkit-keyframes switch3 {
+                10% {background-image: url('<?php echo base_url();?>images/lo-itas-online-green@3x.png');}
+                50% {background-image: url('<?php echo base_url();?>images/lo-itas-online-red@3x.png');}
+                90% {background-image: url('<?php echo base_url();?>images/lo-itas-online-blue@3x.png');}
+                
+            }
+
+            .image4-hover{
+            background-image: url('<?php echo base_url();?>images/lo-pengaduan-masyarakat@3x.png');
+            background-repeat:no-repeat;
+            background-size: 100% 100%;
+            background-origin: content-box;
+             transition: all 1s ease-in-out;
+          
+            margin: 5px;
+       }
+       .image4-hover:hover{
+            overflow:hidden;
+            -webkit-animation: switch4 5s infinite; /* Chrome, Safari, Opera */ 
+                animation: switch4 5s infinite;
+           
+            }
+
+            @-webkit-keyframes switch4 {
+                10% {background-image: url('<?php echo base_url();?>images/lo-pengaduan-masyarakat-green@3x.png');}
+                50% {background-image: url('<?php echo base_url();?>images/lo-pengaduan-masyarakat-red@3x.png');}
+                90% {background-image: url('<?php echo base_url();?>images/lo-pengaduan-masyarakat-blue@3x.png');}
+                
+            }
     </style>
     
     <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-<title> Mechatron - Robotic School </title>
+<title> Kantor Imigrasi Bogor </title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -48,7 +152,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/helpers/typography.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/helpers/utils.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/helpers/colors.css">
-
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/helpers/hover.css">
 <!-- ELEMENTS -->
 
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/elements/badges.css">
@@ -178,6 +282,17 @@
 <!-- Edit -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/editan/frontend-responsive-edit.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>/assets/editan/edit.css">
+
+<!-- Admin theme -->
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/themes/admin/layout.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/themes/admin/color-schemes/default.css">
+
+
+<!-- Admin responsive -->
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/helpers/responsive-elements.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/helpers/admin-responsive.css">
     <!-- JS Core -->
 
     <script type="text/javascript" src="<?php echo base_url();?>/assets/js-core/jquery-core.js"></script>
@@ -202,7 +317,7 @@
 </script>
 
 </head>
-<body>
+<body class="boxed-layout">
 <script type="text/javascript" src="<?php echo base_url();?>/assets/widgets/skrollr/skrollr.js"></script>
 
 <!-- Owl carousel -->
@@ -282,6 +397,9 @@
 <!-- Theme layout -->
 
 <script type="text/javascript" src="<?php echo base_url();?>/assets/themes/frontend/layout.js"></script>
+<!-- Theme layout -->
+
+<script type="text/javascript" src="<?php echo base_url();?>/assets/themes/admin/layout.js"></script>
 
 <!-- Theme switcher -->
 
